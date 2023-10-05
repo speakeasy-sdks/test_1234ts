@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: eb00f2f7ebea120283b4bd62543db36b
   docVersion: 1.0.0
-  speakeasyVersion: 1.93.1
-  generationVersion: 2.144.7
+  speakeasyVersion: 1.94.0
+  generationVersion: 2.147.0
 generation:
   comments:
     disableComments: false
@@ -14,10 +14,10 @@ generation:
   tagNamespacingDisabled: false
 features:
   typescript:
-    core: 2.90.1
+    core: 2.90.3
     globalServerURLs: 2.82.0
 typescript:
-  version: 0.1.0
+  version: 0.1.1
   author: FHOF
   clientServerStatusCodesAsErrors: true
   maxMethodParams: 0
