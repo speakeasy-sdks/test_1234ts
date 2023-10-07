@@ -17,23 +17,20 @@ This API is based on Solr/Lucene Search. The data is indexed using SOLR. This GE
 
 ```typescript
 import { Test } from "Test";
-import { PerformSearchResponse } from "Test/dist/sdk/models/operations";
 
-const sdk = new Test();
+(async() => {
+  const sdk = new Test();
 
-sdk.search.performSearch({
-  requestBody: {
-    criteria: "Hat",
-    rows: 214401,
-    start: 589616,
-  },
-  dataset: "Recycled boom Recumbent",
-  version: "California withdrawal Honda",
-}).then((res: PerformSearchResponse) => {
+  const res = await sdk.search.performSearch({
+    requestBody: {},
+    dataset: "Hat",
+    version: "Reggae",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

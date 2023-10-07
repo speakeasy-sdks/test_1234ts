@@ -3,14 +3,15 @@
 
 ```typescript
 import { Test } from "Test";
-import { ListDataSetsResponse } from "Test/dist/sdk/models/operations";
 
-const sdk = new Test();
+(async() => {
+  const sdk = new Test();
 
-sdk.metadata.listDataSets().then((res: ListDataSetsResponse) => {
+  const res = await sdk.metadata.listDataSets();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 <!-- End SDK Example Usage -->

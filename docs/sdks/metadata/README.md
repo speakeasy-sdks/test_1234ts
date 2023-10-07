@@ -18,15 +18,16 @@ List available data sets
 
 ```typescript
 import { Test } from "Test";
-import { ListDataSetsResponse } from "Test/dist/sdk/models/operations";
 
-const sdk = new Test();
+(async() => {
+  const sdk = new Test();
 
-sdk.metadata.listDataSets().then((res: ListDataSetsResponse) => {
+  const res = await sdk.metadata.listDataSets();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -49,18 +50,19 @@ This GET API returns the list of all the searchable field names that are in the 
 
 ```typescript
 import { Test } from "Test";
-import { ListSearchableFieldsResponse } from "Test/dist/sdk/models/operations";
 
-const sdk = new Test();
+(async() => {
+  const sdk = new Test();
 
-sdk.metadata.listSearchableFields({
-  dataset: "iusto",
-  version: "Keys",
-}).then((res: ListSearchableFieldsResponse) => {
+  const res = await sdk.metadata.listSearchableFields({
+    dataset: "iusto",
+    version: "Keys",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
