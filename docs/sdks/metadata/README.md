@@ -55,8 +55,8 @@ import { Test } from "Test";
   const sdk = new Test();
 
   const res = await sdk.metadata.listSearchableFields({
-    dataset: "iusto",
-    version: "Keys",
+    dataset: "string",
+    version: "string",
   });
 
   if (res.statusCode == 200) {

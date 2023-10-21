@@ -23,8 +23,8 @@ import { Test } from "Test";
 
   const res = await sdk.search.performSearch({
     requestBody: {},
-    dataset: "Hat",
-    version: "Reggae",
+    dataset: "string",
+    version: "string",
   });
 
   if (res.statusCode == 200) {
