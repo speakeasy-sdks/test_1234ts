@@ -1,5 +1,5 @@
 # Search
-(*search*)
+(*.search*)
 
 ## Overview
 
@@ -26,6 +26,7 @@ import { Test } from "Test";
     dataset: "string",
     version: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

@@ -21,6 +21,12 @@ export class ListSearchableFieldsRequest extends SpeakeasyBase {
 
 export class ListSearchableFieldsResponse extends SpeakeasyBase {
     /**
+     * The dataset API for the given version is found and it is accessible to consume.
+     */
+    @SpeakeasyMetadata()
+    twoHundredApplicationJsonRes?: string;
+
+    /**
      * HTTP response content type for this operation
      */
     @SpeakeasyMetadata()
@@ -37,10 +43,4 @@ export class ListSearchableFieldsResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
-
-    /**
-     * The dataset API for the given version is found and it is accessible to consume.
-     */
-    @SpeakeasyMetadata()
-    listSearchableFields200ApplicationJSONString?: string;
 }

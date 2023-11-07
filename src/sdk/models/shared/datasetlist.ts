@@ -5,7 +5,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Type } from "class-transformer";
 
-export class DataSetListApis extends SpeakeasyBase {
+export class Apis extends SpeakeasyBase {
     /**
      * A URL to the API console for each API
      */
@@ -36,10 +36,10 @@ export class DataSetListApis extends SpeakeasyBase {
 }
 
 export class DataSetList extends SpeakeasyBase {
-    @SpeakeasyMetadata({ elemType: DataSetListApis })
+    @SpeakeasyMetadata({ elemType: Apis })
     @Expose({ name: "apis" })
-    @Type(() => DataSetListApis)
-    apis?: DataSetListApis[];
+    @Type(() => Apis)
+    apis?: Apis[];
 
     @SpeakeasyMetadata()
     @Expose({ name: "total" })

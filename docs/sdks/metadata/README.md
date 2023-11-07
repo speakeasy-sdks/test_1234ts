@@ -1,5 +1,5 @@
 # Metadata
-(*metadata*)
+(*.metadata*)
 
 ## Overview
 
@@ -23,6 +23,7 @@ import { Test } from "Test";
   const sdk = new Test();
 
   const res = await sdk.metadata.listDataSets();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -58,6 +59,7 @@ import { Test } from "Test";
     dataset: "string",
     version: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

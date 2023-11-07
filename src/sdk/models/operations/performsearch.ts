@@ -42,7 +42,7 @@ export class PerformSearchRequest extends SpeakeasyBase {
     version: string;
 }
 
-export class PerformSearch200ApplicationJSON extends SpeakeasyBase {}
+export class ResponseBody extends SpeakeasyBase {}
 
 export class PerformSearchResponse extends SpeakeasyBase {
     /**
@@ -66,6 +66,6 @@ export class PerformSearchResponse extends SpeakeasyBase {
     /**
      * successful operation
      */
-    @SpeakeasyMetadata({ elemType: PerformSearch200ApplicationJSON, elemDepth: 2 })
-    performSearch200ApplicationJSONObjects?: Record<string, PerformSearch200ApplicationJSON>[];
+    @SpeakeasyMetadata({ elemType: ResponseBody, elemDepth: 2 })
+    maps?: Record<string, ResponseBody>[];
 }
