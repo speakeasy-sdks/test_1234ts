@@ -1,5 +1,5 @@
 # Metadata
-(*.metadata*)
+(*metadata*)
 
 ## Overview
 
@@ -24,7 +24,6 @@ import { Test } from "Test";
 
   const res = await sdk.metadata.listDataSets();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -40,8 +39,12 @@ import { Test } from "Test";
 
 ### Response
 
-**Promise<[operations.ListDataSetsResponse](../../models/operations/listdatasetsresponse.md)>**
+**Promise<[operations.ListDataSetsResponse](../../sdk/models/operations/listdatasetsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listSearchableFields
 
@@ -60,7 +63,6 @@ import { Test } from "Test";
     version: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -69,13 +71,17 @@ import { Test } from "Test";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.ListSearchableFieldsRequest](../../models/operations/listsearchablefieldsrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.ListSearchableFieldsRequest](../../sdk/models/operations/listsearchablefieldsrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.ListSearchableFieldsResponse](../../models/operations/listsearchablefieldsresponse.md)>**
+**Promise<[operations.ListSearchableFieldsResponse](../../sdk/models/operations/listsearchablefieldsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

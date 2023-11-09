@@ -44,12 +44,12 @@ import { Test } from "Test";
 ## Available Resources and Operations
 
 
-### [.metadata](docs/sdks/metadata/README.md)
+### [metadata](docs/sdks/metadata/README.md)
 
 * [listDataSets](docs/sdks/metadata/README.md#listdatasets) - List available data sets
 * [listSearchableFields](docs/sdks/metadata/README.md#listsearchablefields) - Provides the general information about the API and the list of fields that can be used to query the dataset.
 
-### [.search](docs/sdks/search/README.md)
+### [search](docs/sdks/search/README.md)
 
 * [performSearch](docs/sdks/search/README.md#performsearch) - Provides search capability for the data set with the given search criteria.
 <!-- End SDK Available Operations -->
@@ -73,9 +73,32 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { Test } from "Test";
+
+(async () => {
+    const sdk = new Test();
+
+    let res;
+    try {
+        res = await sdk.metadata.listDataSets();
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 
@@ -158,8 +181,6 @@ const httpClient = axios.create({
 
 const sdk = new Test({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->

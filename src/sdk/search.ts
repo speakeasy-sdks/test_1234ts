@@ -37,7 +37,11 @@ export class Search {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/{dataset}/{version}/records", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/{dataset}/{version}/records",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -56,7 +60,7 @@ export class Search {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
