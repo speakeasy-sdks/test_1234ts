@@ -27,7 +27,6 @@ src/sdk/models/shared/datasetlist.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/listdatasetsresponse.md
 docs/sdk/models/operations/listsearchablefieldsrequest.md
 docs/sdk/models/operations/listsearchablefieldsresponse.md
@@ -40,4 +39,5 @@ docs/sdk/models/shared/datasetlist.md
 docs/sdks/test/README.md
 docs/sdks/metadata/README.md
 docs/sdks/search/README.md
+USAGE.md
 .gitattributes

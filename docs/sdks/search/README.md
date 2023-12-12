@@ -18,7 +18,7 @@ This API is based on Solr/Lucene Search. The data is indexed using SOLR. This GE
 ```typescript
 import { Test } from "Test";
 
-(async() => {
+async function run() {
   const sdk = new Test();
 
   const res = await sdk.search.performSearch({
@@ -30,7 +30,9 @@ import { Test } from "Test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

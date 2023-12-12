@@ -19,7 +19,7 @@ List available data sets
 ```typescript
 import { Test } from "Test";
 
-(async() => {
+async function run() {
   const sdk = new Test();
 
   const res = await sdk.metadata.listDataSets();
@@ -27,7 +27,9 @@ import { Test } from "Test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -55,7 +57,7 @@ This GET API returns the list of all the searchable field names that are in the 
 ```typescript
 import { Test } from "Test";
 
-(async() => {
+async function run() {
   const sdk = new Test();
 
   const res = await sdk.metadata.listSearchableFields({
@@ -66,7 +68,9 @@ import { Test } from "Test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

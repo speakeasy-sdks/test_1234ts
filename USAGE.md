@@ -1,8 +1,8 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { Test } from "Test";
 
-(async () => {
+async function run() {
     const sdk = new Test();
 
     const res = await sdk.metadata.listDataSets();
@@ -10,7 +10,9 @@ import { Test } from "Test";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
