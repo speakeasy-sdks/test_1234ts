@@ -22,7 +22,9 @@ async function run() {
   const sdk = new Test();
 
   const res = await sdk.search.performSearch({
-    requestBody: {},
+    requestBody: {
+      criteria: "string",
+    },
     dataset: "string",
     version: "string",
   });

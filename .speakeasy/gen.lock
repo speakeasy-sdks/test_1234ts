@@ -1,0 +1,60 @@
+lockVersion: 2.0.0
+id: 71702fa0-2d98-4565-8511-dd17ab4b11cb
+management:
+  docChecksum: eb00f2f7ebea120283b4bd62543db36b
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.5.1
+  configChecksum: aeb4ef1cbcefd47338d530331345aaf0
+  repoURL: https://github.com/speakeasy-sdks/test_1234ts.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/test_1234ts
+features:
+  typescript:
+    core: 3.4.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/metadata.ts
+  - src/sdk/search.ts
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/sdk/models/errors/sdkerror.ts
+  - src/sdk/types/index.ts
+  - src/sdk/types/rfcdate.ts
+  - tsconfig.json
+  - src/sdk/models/operations/listdatasets.ts
+  - src/sdk/models/operations/listsearchablefields.ts
+  - src/sdk/models/operations/performsearch.ts
+  - src/sdk/models/shared/datasetlist.ts
+  - src/sdk/models/errors/index.ts
+  - src/sdk/models/operations/index.ts
+  - src/sdk/models/shared/index.ts
+  - docs/sdk/models/operations/listdatasetsresponse.md
+  - docs/sdk/models/operations/listsearchablefieldsrequest.md
+  - docs/sdk/models/operations/listsearchablefieldsresponse.md
+  - docs/sdk/models/operations/performsearchrequestbody.md
+  - docs/sdk/models/operations/performsearchrequest.md
+  - docs/sdk/models/operations/responsebody.md
+  - docs/sdk/models/operations/performsearchresponse.md
+  - docs/sdk/models/shared/apis.md
+  - docs/sdk/models/shared/datasetlist.md
+  - docs/sdks/test/README.md
+  - docs/sdks/metadata/README.md
+  - docs/sdks/search/README.md
+  - USAGE.md
+  - .gitattributes
