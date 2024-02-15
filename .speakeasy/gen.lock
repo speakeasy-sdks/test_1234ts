@@ -4,15 +4,15 @@ management:
   docChecksum: eb00f2f7ebea120283b4bd62543db36b
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.5.1
-  configChecksum: aeb4ef1cbcefd47338d530331345aaf0
+  generationVersion: 2.258.2
+  releaseVersion: 0.5.2
+  configChecksum: ec7f7439115d284b32444bac4f2daf02
   repoURL: https://github.com/speakeasy-sdks/test_1234ts.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test_1234ts
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.7
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/sdk/metadata.ts

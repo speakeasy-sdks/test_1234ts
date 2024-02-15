@@ -61,8 +61,8 @@ async function run() {
   const sdk = new Test();
 
   const res = await sdk.metadata.listSearchableFields({
-    dataset: "string",
-    version: "string",
+    dataset: "<value>",
+    version: "<value>",
   });
 
   if (res.statusCode == 200) {

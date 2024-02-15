@@ -23,10 +23,10 @@ async function run() {
 
   const res = await sdk.search.performSearch({
     requestBody: {
-      criteria: "string",
+      criteria: "<value>",
     },
-    dataset: "string",
-    version: "string",
+    dataset: "<value>",
+    version: "<value>",
   });
 
   if (res.statusCode == 200) {
