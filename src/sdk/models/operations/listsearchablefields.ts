@@ -42,5 +42,5 @@ export class ListSearchableFieldsResponse extends SpeakeasyBase {
      * The dataset API for the given version is found and it is accessible to consume.
      */
     @SpeakeasyMetadata()
-    res?: string;
+    string?: string;
 }
