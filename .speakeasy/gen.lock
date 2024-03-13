@@ -3,17 +3,17 @@ id: 71702fa0-2d98-4565-8511-dd17ab4b11cb
 management:
   docChecksum: eb00f2f7ebea120283b4bd62543db36b
   docVersion: 1.0.0
-  speakeasyVersion: 1.204.1
-  generationVersion: 2.279.1
-  releaseVersion: 0.5.3
-  configChecksum: e0c380c8318db956e9242de7d10d689e
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 0.5.4
+  configChecksum: 427769a32f7cf46dcee5a612b1f835d2
   repoURL: https://github.com/speakeasy-sdks/test_1234ts.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test_1234ts
 features:
   typescript:
     core: 3.4.8
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
 generatedFiles:
   - src/sdk/metadata.ts
   - src/sdk/search.ts
